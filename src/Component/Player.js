@@ -9,16 +9,16 @@ class Player extends Component {
         incrementScore: PropTypes.func.isRequired
     }
     handleClick = () => {
+        
         this.props.incrementScore(this.props.id);
 
     }
     render() {
         return (
             <div className="player">
-                {/* <p className="id">{this.props.id}</p> */}
                 <p className="name">Name: {this.props.name} </p>
                 <p className="scores">Score: {this.props.score}</p>
-                <button className="plus-button" onClick={this.handleClick}>+</button>
+                <button className="plus-button" onClick={this.handleClick}>+++++</button>
             </div>
         )
     }
